@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #535050;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar label {
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #444;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sidebar label:hover {
+  background: #555;
+}
+.content .tab {
+  display: none;
+  padding: 20px;
+  background-color: #5f5656;
+}
+/* Main Content Area */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+  color:white
+}
+header {
+  background-color: none; /* Replace with any color */
+  color: white; /* Makes text readable */
+  padding: 20px;
+  text-align: center;
+  font-family: ;
+}
+footer {
+  background-color: none; /* Replace with any color */
+  color: white; /* Makes text readable */
+  padding: 20px;
+  text-align: center;
+}
+Form {
+  display: flex;
+  flex-direction: column;
+}
+form input{
+  font-family:'Times New Roman', Times, serif
+}
+form textarea {
+font-family: 'Times New Roman', Times, serif
+}
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(6, 149, 192)
+}
+/* Hide all tab sections by default */
+.tab {
+  display: none;
+}
+
+/* Show the section based on selected radio */
+#about-tab:checked ~ .content .about{
+  display: block;
+}
+#languages-tab:checked ~ .content .languages{
+  display: block;
+}
+#education-tab:checked ~ .content .education{
+  display: block;
+}
+#interests-tab:checked ~ .content .interests{
+  display: block;
+}
+#projects-tab:checked ~ .content .projects{
+  display: block;
+} 
+#contact-tab:checked ~ .content .contact {
+  display: block;
+}
+.butterfly-decor span {
+  display: inline-block;
+  animation: fadein 3s ease-in-out infinite;
+}
+
+@keyframes fadein {
+  0%, 100% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
