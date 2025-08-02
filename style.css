@@ -45,6 +45,7 @@ input[type="radio"] {
   padding: 20px;
   background-color: #5f5656;
 }
+
 /* Main Content Area */
 .content {
   flex: 1;
@@ -52,19 +53,25 @@ input[type="radio"] {
   background: #fff;
   color:white
 }
+
+/*My header, Precious Portfolio */
 header {
-  background-color: none; /* Replace with any color */
+  background-color: none;
   color: white; /* Makes text readable */
   padding: 20px;
   text-align: center;
   font-family: ;
 }
+
+/* My footer CSS */ 
 footer {
-  background-color: none; /* Replace with any color */
+  background-color: none;
   color: white; /* Makes text readable */
   padding: 20px;
   text-align: center;
 }
+
+/* My contact me form CSS styling */
 Form {
   display: flex;
   flex-direction: column;
@@ -79,9 +86,10 @@ form button:hover {
   cursor: pointer;
   background-color: rgb(6, 149, 192)
 }
+
 /* Hide all tab sections by default */
 .tab {
-  display: none;
+  display: none;  
 }
 
 /* Show the section based on selected radio */
@@ -103,11 +111,12 @@ form button:hover {
 #contact-tab:checked ~ .content .contact {
   display: block;
 }
+
+/* My butterfly decor in my header */
 .butterfly-decor span {
   display: inline-block;
   animation: fadein 3s ease-in-out infinite;
 }
-
 @keyframes fadein {
   0%, 100% { transform: translateY(0); }
   100% { transform: translateY(-10px); }
